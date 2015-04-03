@@ -21,7 +21,7 @@
 #import "FMDatabaseQueue.h"
 #import "FMResultSet.h"
 #import "FMDatabase.h"
-
+#import <UIKit/UIKit.h>
 #define LKSQLText @"text"
 #define LKSQLInt @"integer"
 #define LKSQLDouble @"real"
