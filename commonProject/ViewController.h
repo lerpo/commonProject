@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+#import "BaseViewController.h"
+@interface ViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
 {
     NSArray *listarray;
     UITableView *tableView;

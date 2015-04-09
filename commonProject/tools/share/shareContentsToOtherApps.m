@@ -8,6 +8,8 @@
 
 
 #import "shareContentsToOtherApps.h"
+#import <ShareSDK/ShareSDK.h>
+#import "ACViewDelegate.h"
 #define APPALL ((AppDelegate*)[[UIApplication sharedApplication] delegate])
 @interface shareContentsToOtherApps ()
 

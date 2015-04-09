@@ -13,8 +13,8 @@
 @implementation PullRefreshController
 -(void)viewDidLoad
 {
+    self.navTiltle = @"下拉刷新";
     [super viewDidLoad];
-    [self initNav];
      tableView = [[MJTableViewController alloc] init];
      tableView.mjTableViewDelegate = self;
      tableView.frame = CGRectMake(0,64, kDeviceWidth, KDeviceHeight-64);
@@ -47,40 +47,12 @@
     FMDatabaseQueue *queue = [[FMDatabaseQueue alloc]initWithPath:[ZUOYLTempHelper getPathForDocuments:@"asiastarbus.db" inDir:@"db"]];
     tableView.cacheDao = [[JkHealthyDAO alloc]initWithDbqueue:queue];
     
-    
-}
+    }
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
 //    [tableView headerBeginRefreshing];
     [self.view addSubview:tableView.view];
-    
-}
--(void)initNav{
-    self.view.backgroundColor = [UIColor whiteColor];
-    if ([self.navigationController.navigationBar respondsToSelector:@selector( setBackgroundImage:forBarMetrics:)]){
-        //        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"tb_navbar.png"] forBarMetrics:UIBarMetricsDefault];
-        self.navigationController.navigationBar.barTintColor = [UIColor yellowColor];
-    }
-    UIButton *backBtn=[UIButton buttonWithType:UIButtonTypeCustom];
-    [backBtn setImage:[UIImage imageNamed:@"navBack.png"] forState:UIControlStateNormal];
-        [backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
-    [backBtn setTitle:@"返回" forState:UIControlStateNormal];
-    [backBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    backBtn.frame=CGRectMake(0, 0,40, 40);//52, 42
-    
-    
-    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationItem.leftBarButtonItem = backButtonItem;
-    
-    UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(40, 0, 72, 33)];
-    titleLabel.backgroundColor=[UIColor clearColor];
-    titleLabel.textColor=[UIColor orangeColor];
-    titleLabel.textAlignment=NSTextAlignmentLeft;
-    titleLabel.font=[UIFont systemFontOfSize:18];
-    titleLabel.text=@"下拉刷新";
-    
-    self.navigationItem.titleView = titleLabel;
     
 }
 - (UITableViewCell *)tableViewCellInit:(UITableView *)uitableview WithIndexPath:(NSIndexPath *)indexPath
@@ -109,9 +81,5 @@
 {
     UILabel *lable = (UILabel *)sender;
     NSLog(@"%ld",lable.tag);
-}
--(void)backAction
-{
-    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

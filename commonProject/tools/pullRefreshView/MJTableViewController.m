@@ -18,6 +18,7 @@
 #import "JkHealthy.h"
 #import "JsonToModel.h"
 #import "commonJudgeMent.h"
+
 #define HEADERREFRESH 1
 #define FOOTERREFRESH 2
 #define PAGESIZE 10
@@ -31,6 +32,9 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
 #define MJRandomData [NSString stringWithFormat:@"随机数据---%d", arc4random_uniform(1000000)]
 
 @interface MJTableViewController ()
+{
+    NetWorkOpration *networkopration;
+}
 /**
  *  存放假数据
  */
@@ -92,38 +96,9 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
           requesturl  =requestUrl;
          }
        
-      NSLog(@"requestUrl:%@",requesturl);
-      NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:requesturl]];   //get请求方式
-     /*
-     同步请求
-     */
-      @autoreleasepool {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            NSURLResponse *respons = nil;
-            NSError *error = nil;
-            NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&respons error:&error];
-            NSLog(@"请求的线程:%@",[NSThread currentThread]);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if(data != nil)
-                {
-//                   NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//                    NSLog(@"str :%@",str);
-                    NSArray *objects=[JsonToModel objectsFromDictionaryData:data className:@"JkHealthy"];
-                    [self addObjectTofadeData:objects];
-                    [self refreshTableView];
-                   
-                }
-                else if(data == nil && error == nil)
-                {
-                    NSLog(@"接收到空数据");
-                }
-                else
-                {
-                    NSLog(@"%@",error.localizedDescription);
-                }
-            });});
-           }
-       }
+        NSLog(@"requestUrl:%@",requesturl);
+         [networkopration sendGetRequestWithUrl:requesturl]; //请求网络
+     }
       else
       {
         NSLog(@"没有请求路径");
@@ -161,6 +136,26 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
     
     
 }
+
+//网络返回结果
+-(void)netWorkCallbackResult:(NSData *)data
+{
+    if(data != nil)
+    {
+        //                   NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        //                    NSLog(@"str :%@",str);
+        NSArray *objects=[JsonToModel objectsFromDictionaryData:data className:@"JkHealthy"];
+        [self addObjectTofadeData:objects];
+        [self refreshTableView];
+        
+    }
+    else if(data == nil)
+    {
+        NSLog(@"接收到空数据");
+    }
+  
+
+}
 -(void)resetTableView
 {
     startPage = 0;
@@ -177,7 +172,7 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
     }
     if([objects count] < PAGESIZE && [objects count] > 0)
     {
-        getMoreData = YES;
+         getMoreData = YES;
         [self.fakeData addObjectsFromArray:objects];
     }
     if([objects count] > 0  && cacheDao != nil) //如果缓存实体不为空则加缓存
@@ -189,18 +184,28 @@ NSString *const MJTableViewCellIdentifier = @"Cell";
     }
     if(objects == nil || [objects count] == 0)
     {
-        getMoreData = NO;
+        if([self.fakeData count] > 0)
+        {
+          getMoreData = YES;
+        }
+        else
+        {
+           getMoreData = NO;
+        }
     }
     if(!isPaging)  //不是分页就一次性加载
     {
-        getMoreData = YES;
+         getMoreData = YES;
         [self.fakeData addObjectsFromArray:objects];
     }
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    
+     [super viewDidLoad];
+     networkopration = [NetWorkOpration getInstance];
+     networkopration.delegate = self;
     
        [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:MJTableViewCellIdentifier];
        if(frame.size.height >0 && frame .size.width > 0)

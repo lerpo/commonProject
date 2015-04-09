@@ -21,7 +21,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ShareSDKTypeDef.h"
-
+#import <UIKit/UIKit.h>
 ///#begin zh-cn
 /**
  *	@brief	视图委托协议

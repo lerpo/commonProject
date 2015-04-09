@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MJTableViewController.h"
 #import "PullRefreshCell.h"
-@interface PullRefreshController : UIViewController <MJTableViewControllerDelegate,pulltableViewcellDelegate>
+#import "BaseViewController.h"
+@interface PullRefreshController : BaseViewController <MJTableViewControllerDelegate,pulltableViewcellDelegate>
 {
     MJTableViewController *tableView;
     UITableViewCell *cell;

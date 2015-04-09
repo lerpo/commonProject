@@ -253,7 +253,7 @@
 */
 +(NSString *)createPostURL:(NSString *) url_address
 {
-    return [NSString stringWithFormat:@"%@%@",BASE_URL,url_address];
+    return [NSString stringWithFormat:@"%@",url_address];
 }
 
 +(NSString *)createPostParams:(NSMutableDictionary *)params

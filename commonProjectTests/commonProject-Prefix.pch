@@ -1,0 +1,38 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "JsonToModel.h"
+    #import "Strings.h"
+    #import "URLNameSpace.h"
+#import "AppDelegate.h"
+#endif
+
+#define DeviceVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define PROJECTSID 25
+#define APPALL ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+#define SCREENWIDTH [[UIScreen mainScreen] bounds].size.width
+//#define SCREENH IGHT [[UIScreen mainScreen] bounds].size.width
+#define SCREENHIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define KDeviceHeight [UIScreen mainScreen].bounds.size.height
+#define BACK_COLOR [UIColor colorWithRed:240.0/255.0 green:240.0/255.0 blue:240.0/255.0 alpha:1.0] //背景颜色
+#define YINGYONG_COLOR [UIColor colorWithRed:255.0/255.0 green:215.0/255.0 blue:1.0/255.0 alpha:1.0]//主色调
+
+#define  MMLastLongitude @"longitude"
+#define  MMLastLatitude  @"latitude"
+#define  MMLastCity      @"MMLastCity"
+#define  MMLastAddress   @"MMLastAddress"

@@ -20,7 +20,7 @@
 ///#end
 
 #import <AGCommon/ICMErrorInfo.h>
-
+#import <UIKit/UIKit.h>
 #ifndef ShareSDKInterface_ShareSDKTypeDef_h
 #define ShareSDKInterface_ShareSDKTypeDef_h
 
