@@ -15,4 +15,6 @@
 @property(nonatomic,strong)NSString *description;
 @property(nonatomic,strong)NSString *url;
 - (void)simpleShareAllButtonClickHandler:(id)sender;
++ (void)initializePlat;
++ (void)share;
 @end
