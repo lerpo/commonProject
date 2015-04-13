@@ -11,6 +11,9 @@
 #import "PullRefreshController.h"
 #import "MJTableViewController.h"
 #import "UitableFeildViewController.h"
+#import "EasyLayout.h"
+#import "shareTest.h"
+#import "LoadNotyBorder.h"
 @interface ViewController ()
 
 @end
@@ -25,7 +28,7 @@
 }
 - (void)initView
 {
-    listarray = [NSArray arrayWithObjects:@"下拉刷新",@"UITextField", nil];
+    listarray = [NSArray arrayWithObjects:@"下拉刷新",@"UITextField",@"EasyLayout",@"分享测试",@"加载 提示框", nil];
     tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KDeviceHeight, kDeviceWidth)];
     tableView.dataSource = self;
     tableView.delegate = self;
@@ -70,6 +73,21 @@
         case 1:
         {
             [self.navigationController pushViewController:[[UitableFeildViewController alloc]init] animated:YES];
+        }
+            break;
+        case 2:
+        {
+            [self.navigationController pushViewController:[[EasyLayout alloc]init] animated:YES];
+        }
+            break;
+        case 3:
+        {
+            [self.navigationController pushViewController:[[shareTest alloc]init] animated:YES];
+        }
+            break;
+        case 4:
+        {
+            [self.navigationController pushViewController:[[LoadNotyBorder alloc]init] animated:YES];
         }
             break;
     }
