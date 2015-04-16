@@ -15,4 +15,7 @@ dependencies: \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/UitableFeildViewController.h \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/EasyLayout.h \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/shareTest.h \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/LoadNotyBorder.h
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/LoadNotyBorder.h \
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/ImageScroll.h \
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/ImageReScrollView.h \
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/entity/WcmCmsPicRound.h

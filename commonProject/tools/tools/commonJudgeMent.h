@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface commonJudgeMent : NSObject
-+(BOOL)ifConnectNet;
++(BOOL)ifConnectNet;   //判断网络是否连接
++(int)getNetworkType;  //判断网络类型
 @end

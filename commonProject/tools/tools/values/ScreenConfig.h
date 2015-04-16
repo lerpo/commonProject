@@ -20,4 +20,6 @@
 
 #define KDeviceHeight [UIScreen mainScreen].bounds.size.height
 
+#define DeviceVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
 @end

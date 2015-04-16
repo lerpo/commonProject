@@ -21,6 +21,7 @@
 
 @property(nonatomic,strong)  const id<NetWorkCallbackDelegate>  delegate;
 
+-(void)sendPostRequestWithUrl:(NSString *)url withData:(NSArray *)data;
 -(void)sendGetRequestWithUrl:(NSString *)url;
 +(NetWorkOpration *) getInstance;
 

@@ -12,4 +12,7 @@ dependencies: \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/db/fmdb/FMDatabasePool.h \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/tools/NetWorkOpration.h \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/PullRefreshCell.h \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/UitableFeildViewController.h
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/UitableFeildViewController.h \
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/EasyLayout.h \
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/shareTest.h \
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/LoadNotyBorder.h

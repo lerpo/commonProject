@@ -14,6 +14,7 @@
 #import "EasyLayout.h"
 #import "shareTest.h"
 #import "LoadNotyBorder.h"
+#import "ImageScroll.h"
 @interface ViewController ()
 
 @end
@@ -28,8 +29,8 @@
 }
 - (void)initView
 {
-    listarray = [NSArray arrayWithObjects:@"下拉刷新",@"UITextField",@"EasyLayout",@"分享测试",@"加载 提示框", nil];
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KDeviceHeight, kDeviceWidth)];
+    listarray = [NSArray arrayWithObjects:@"下拉刷新",@"UITextField",@"EasyLayout",@"分享测试",@"加载 提示框",@"轮显图", nil];
+    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, KDeviceHeight)];
     tableView.dataSource = self;
     tableView.delegate = self;
     [self.view addSubview:tableView];
@@ -46,7 +47,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-      NSString *CellIdentifer = @"cellIndex";
+    NSString *CellIdentifer = @"cellIndex";
     UITableViewCell *tableViewcell = [tableView dequeueReusableCellWithIdentifier:CellIdentifer];
     if(tableViewcell == nil)
     {
@@ -90,6 +91,12 @@
             [self.navigationController pushViewController:[[LoadNotyBorder alloc]init] animated:YES];
         }
             break;
+        case 5:
+        {
+            [self.navigationController pushViewController:[[ImageScroll alloc]init] animated:YES];
+        }
+            break;
+
     }
 }
 @end

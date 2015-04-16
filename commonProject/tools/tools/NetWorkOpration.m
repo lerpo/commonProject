@@ -60,4 +60,37 @@
 
 }
 
+
+-(void)sendPostRequestWithUrl:(NSString *)url withData:(NSArray *)data
+{
+    
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];   //get请求方式
+    /*
+     同步请求
+     */
+    @autoreleasepool {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSURLResponse *respons = nil;
+            NSError *error = nil;
+            NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&respons error:&error];
+            NSLog(@"请求的线程:%@",[NSThread currentThread]);
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                if(data != nil)
+                {
+                    [delegate netWorkCallbackResult:data];
+                    
+                }
+                else if(data == nil && error == nil)
+                {
+                    NSLog(@"接收到空数据");
+                }
+                else
+                {
+                    NSLog(@"%@",error.localizedDescription);
+                }
+            });});
+    }
+
+
+}
 @end

@@ -75,7 +75,7 @@
 
 +(NSString *)getDateFormLongSince1970:(NSString *)secs;//获取number ms以前的时间
 
-+(NSString *)getDetailDateFormLongSince1970:(NSString *)secs;
++(NSString *)getDetailDateFormLongSince1970:(NSString *)secs; //精确到秒
 
 +(NSString *)getDateFormDate:(NSDate *)date;
 @end

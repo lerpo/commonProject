@@ -57,4 +57,5 @@ dependencies: \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/RDVTabBarController/RDVTabBar.h \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/ViewController.h \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/views/BaseViewController.h \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/tools/CommonStr.h
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/tools/CommonStr.h \
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/share/shareContentsToOtherApps.h
