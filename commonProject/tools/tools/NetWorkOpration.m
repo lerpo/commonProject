@@ -60,11 +60,20 @@
 
 }
 
-
--(void)sendPostRequestWithUrl:(NSString *)url withData:(NSArray *)data
+#pragma mark post请求
+-(void)sendPostRequestWithUrl:(NSString *)url withData:(NSArray *)datas
 {
+    //第二步，创建请求
     
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];   //get请求方式
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+    
+    [request setHTTPMethod:@"POST"];//设置请求方式为POST，默认为GET
+    
+    NSString *str = @"type=focus-c";//设置参数
+    
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [request setHTTPBody:data];
     /*
      同步请求
      */
