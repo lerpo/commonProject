@@ -21,8 +21,8 @@
     UIButton *view2;
     UIButton *view3;
     UIButton *view4;
-    NSArray *topViewgroup;
-    NSArray *
+    NSArray *topViewGroup;
+    NSArray *viewcontrolGroup;
     
 }
 @end
@@ -81,10 +81,16 @@
      view4.tag = DEKUIBEIERBTN;
     [view4 addTarget:self action:@selector(toubuttonsTouch:) forControlEvents:UIControlEventTouchUpInside];
     
-    [topView addSubview:view1];
-    [topView addSubview:view2];
-    [topView addSubview:view3];
-    [topView addSubview:view4];
+    topViewGroup = [[NSArray alloc] initWithObjects:view1,view2,view3,view4 ,nil];
+    for(int i = 0 ; i < [topViewGroup count] ;i++)
+    {
+        [topView addSubview:topViewGroup[i]];
+    }
+    
+//    [topView addSubview:view1];
+//    [topView addSubview:view2];
+//    [topView addSubview:view3];
+//    [topView addSubview:view4];
     topView.userInteractionEnabled = YES;
     
     apsScrollView = [[APScrollView alloc]init];
@@ -116,12 +122,16 @@
     UIView *uiview4 = [[UIView alloc] initWithFrame:CGRectMake(kDeviceWidth*3, 0, kDeviceWidth, KDeviceHeight)];
     uiview4.backgroundColor = [UIColor lightGrayColor];
 
-    
-    
-    [apsScrollView addSubview:uiview1];
-    [apsScrollView addSubview:uiview2];
-    [apsScrollView addSubview:uiview3];
-    [apsScrollView addSubview:uiview4];
+    viewcontrolGroup = [[NSArray alloc] initWithObjects:uiview1,uiview2,uiview3,uiview4, nil];
+    for(int i = 0; i < [viewcontrolGroup count]; i++)
+    {
+        [apsScrollView addSubview:viewcontrolGroup[i]];
+    }
+//    
+//    [apsScrollView addSubview:uiview1];
+//    [apsScrollView addSubview:uiview2];
+//    [apsScrollView addSubview:uiview3];
+//    [apsScrollView addSubview:uiview4];
     [apsScrollView setContentOffset:CGPointMake(kDeviceWidth*0, 0) animated:YES];
     [self.view addSubview:apsScrollView];
     
