@@ -21,7 +21,8 @@
     UIButton *view2;
     UIButton *view3;
     UIButton *view4;
-   
+    NSArray *topViewgroup;
+    NSArray *
     
 }
 @end
