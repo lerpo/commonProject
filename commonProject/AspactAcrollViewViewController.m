@@ -126,7 +126,7 @@
     
 }
 
--(void)toubuttonsTouch:(id)sender{
+-(void)toubuttonsTouch:(id)sender{  //此处最容易忘记的就是 setContentOffset的位置
     apsScrollView.isSecond=0;
     UIButton *button=(UIButton *)sender;
     int tag=button.tag;
