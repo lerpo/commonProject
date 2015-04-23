@@ -18,4 +18,5 @@ dependencies: \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/LoadNotyBorder.h \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/ImageScroll.h \
   /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/ImageReScrollView.h \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/entity/WcmCmsPicRound.h
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/entity/WcmCmsPicRound.h \
+  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/AspactAcrollViewViewController.h

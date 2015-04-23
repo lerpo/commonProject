@@ -15,6 +15,7 @@
 #import "shareTest.h"
 #import "LoadNotyBorder.h"
 #import "ImageScroll.h"
+#import "AspactAcrollViewViewController.h"
 @interface ViewController ()
 
 @end
@@ -29,7 +30,7 @@
 }
 - (void)initView
 {
-    listarray = [NSArray arrayWithObjects:@"下拉刷新",@"UITextField",@"EasyLayout",@"分享测试",@"加载 提示框",@"轮显图", nil];
+    listarray = [NSArray arrayWithObjects:@"下拉刷新",@"UITextField",@"EasyLayout",@"分享测试",@"加载 提示框",@"轮显图",@"滑动选项卡", nil];
     tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, KDeviceHeight)];
     tableView.dataSource = self;
     tableView.delegate = self;
@@ -94,6 +95,10 @@
         case 5:
         {
             [self.navigationController pushViewController:[[ImageScroll alloc]init] animated:YES];
+        }
+        case 6:
+        {
+            [self.navigationController pushViewController:[[AspactAcrollViewViewController alloc] init] animated:YES];
         }
             break;
 
