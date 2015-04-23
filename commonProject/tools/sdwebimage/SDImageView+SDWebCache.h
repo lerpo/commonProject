@@ -16,5 +16,5 @@
 - (void)setImageWithURL:(NSURL *)url refreshCache:(BOOL)refreshCache;
 - (void)setImageWithURL:(NSURL *)url refreshCache:(BOOL)refreshCache placeholderImage:(UIImage *)placeholder;
 - (void)cancelCurrentImageLoad;
-
+- (UIImage*) createImageWithColor: (UIColor*) color;  //通过一个color对象生成一个image对象
 @end

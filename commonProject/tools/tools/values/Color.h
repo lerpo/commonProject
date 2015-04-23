@@ -15,4 +15,6 @@
 
 
 
+#define refColor  CGColorCreate(CGColorSpaceCreateDeviceRGB(),(CGFloat[]){ 2.0/255.0, 160.0/255.0, 231.0/255.0, 1 }); //主要用于按钮边框颜色
+
 #endif

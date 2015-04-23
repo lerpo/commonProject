@@ -7,11 +7,14 @@
  
  */
 #import <UIKit/UIKit.h>
-
+#import "ViWcmCommonMember.h"
 @interface BaseViewController : UIViewController
 
 
 @property(nonatomic,assign) BOOL *navisHiddenLeftitle;  //左边标题
 @property(nonatomic,strong) NSString *navTiltle;     //中间标题
 @property(nonatomic,strong) NSString *navrigthTitle;    //右边标题
+
+-(ViWcmCommonMember *)getUserInfo;
+-(void)saveUserInfo:(ViWcmCommonMember *)comonmenber;
 @end

@@ -20,6 +20,7 @@
 		4F0B92921ADB886D008C637F /* AlertNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B92911ADB886D008C637F /* AlertNotify.m */; };
 		4F0B92951ADB9891008C637F /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B92941ADB9891008C637F /* DejalActivityView.m */; };
 		4F0D8B811AE8700400BFE131 /* AspactAcrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D8B801AE8700400BFE131 /* AspactAcrollViewViewController.m */; };
+		4F0D8B841AE898D400BFE131 /* ViWcmCommonMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D8B831AE898D400BFE131 /* ViWcmCommonMember.m */; };
 		4F115B171AD5140F009EF702 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F115B161AD5140F009EF702 /* BaseViewController.m */; };
 		4F115B1A1AD51F22009EF702 /* UitableFeildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F115B191AD51F22009EF702 /* UitableFeildViewController.m */; };
 		4F115B1E1AD52FD4009EF702 /* UITextView+UITextViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F115B1D1AD52FD4009EF702 /* UITextView+UITextViewCategory.m */; };
@@ -165,6 +166,8 @@
 		4F0B92941ADB9891008C637F /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
 		4F0D8B7F1AE8700400BFE131 /* AspactAcrollViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspactAcrollViewViewController.h; sourceTree = "<group>"; };
 		4F0D8B801AE8700400BFE131 /* AspactAcrollViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspactAcrollViewViewController.m; sourceTree = "<group>"; };
+		4F0D8B821AE898D400BFE131 /* ViWcmCommonMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViWcmCommonMember.h; sourceTree = "<group>"; };
+		4F0D8B831AE898D400BFE131 /* ViWcmCommonMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViWcmCommonMember.m; sourceTree = "<group>"; };
 		4F115B151AD5140F009EF702 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		4F115B161AD5140F009EF702 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		4F115B181AD51F22009EF702 /* UitableFeildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UitableFeildViewController.h; sourceTree = "<group>"; };
@@ -417,6 +420,8 @@
 			isa = PBXGroup;
 			children = (
 				4F25B7861ADF88EF000452B9 /* WcmCmsPicRound.h */,
+				4F0D8B821AE898D400BFE131 /* ViWcmCommonMember.h */,
+				4F0D8B831AE898D400BFE131 /* ViWcmCommonMember.m */,
 				4F25B7871ADF88EF000452B9 /* WcmCmsPicRound.m */,
 				4F0085AA1ACE6CA5000E055F /* JkHealthy.h */,
 				4F0085AB1ACE6CA5000E055F /* JkHealthy.m */,
@@ -1118,6 +1123,7 @@
 				4F0B92821ADB4C3F008C637F /* ViewEvent.m in Sources */,
 				4F9E7EF41ACCEE50000252B6 /* FMDatabaseAdditions.m in Sources */,
 				4F9E7F0C1ACCEE50000252B6 /* SDDataCache.m in Sources */,
+				4F0D8B841AE898D400BFE131 /* ViWcmCommonMember.m in Sources */,
 				4F9E7F0D1ACCEE50000252B6 /* SDImageView+SDWebCache.m in Sources */,
 				4F9E7EFF1ACCEE50000252B6 /* qrinput.c in Sources */,
 			);

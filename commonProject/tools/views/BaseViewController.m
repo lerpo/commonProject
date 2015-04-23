@@ -72,7 +72,22 @@
 
     
 }
+//获取当前用户信息
+-(ViWcmCommonMember *)getUserInfo
+{
+    NSData *userdata=[[NSUserDefaults standardUserDefaults] objectForKey:@"user"];
+    
+    return [NSKeyedUnarchiver unarchiveObjectWithData:userdata];
+    
+}
 
+//保存当前用户信息
+-(void)saveUserInfo:(ViWcmCommonMember *)comonmenber
+{
+     NSData *memberData=[NSKeyedArchiver archivedDataWithRootObject:comonmenber];
+    [[NSUserDefaults standardUserDefaults] setObject:memberData forKey:@"user"];
+
+}
 #pragma mark 返回
 -(void)backAction
 {
