@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/PullRefreshCell.m \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/PullRefreshCell.h
+  /Users/jerei/Documents/\ 项目文件/commonProject/commonProject/PullRefreshCell.m \
+  /Users/jerei/Documents/\ 项目文件/commonProject/commonProject/PullRefreshCell.h

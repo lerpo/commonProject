@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/tools/CommonStr.m \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/tools/CommonStr.h
+  /Users/jerei/Documents/\ 项目文件/commonProject/commonProject/tools/tools/CommonStr.m \
+  /Users/jerei/Documents/\ 项目文件/commonProject/commonProject/tools/tools/CommonStr.h

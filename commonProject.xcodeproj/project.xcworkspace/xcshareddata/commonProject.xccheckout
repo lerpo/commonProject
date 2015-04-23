@@ -10,6 +10,8 @@
 	<string>commonProject</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>AC856855AF94099528DF4D0529B2122CCF14FDE1</key>
+		<string>https://github.com/lerpo/commonProject.git</string>
 		<key>B0B03ECECAD89CC5A9CD342D16CEF6164CFD4240</key>
 		<string>https://github.com/lerpo/commonProject.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>commonProject.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>AC856855AF94099528DF4D0529B2122CCF14FDE1</key>
+		<string>../../commonProject/</string>
 		<key>B0B03ECECAD89CC5A9CD342D16CEF6164CFD4240</key>
 		<string>../..</string>
 	</dict>
@@ -33,6 +37,14 @@
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>B0B03ECECAD89CC5A9CD342D16CEF6164CFD4240</string>
+			<key>IDESourceControlWCCName</key>
+			<string>commonProject</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AC856855AF94099528DF4D0529B2122CCF14FDE1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>commonProject</string>
 		</dict>

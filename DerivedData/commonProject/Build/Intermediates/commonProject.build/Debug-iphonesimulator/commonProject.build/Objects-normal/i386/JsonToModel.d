@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/db/fmdb/JsonToModel.m \
-  /Users/jerei/Documents/\ /dldd/dldd/dldd/xcodeworkspace/xcodeworkspace/commonProject/commonProject/tools/db/fmdb/JsonToModel.h
+  /Users/jerei/Documents/\ 项目文件/commonProject/commonProject/tools/db/fmdb/JsonToModel.m \
+  /Users/jerei/Documents/\ 项目文件/commonProject/commonProject/tools/db/fmdb/JsonToModel.h
